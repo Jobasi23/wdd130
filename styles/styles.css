@@ -1,4 +1,38 @@
+header, .grid, footer {
+    max-width:840px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;    
+    background-color: steelblue;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    /* display: block; */
+    padding: 10px;
+}
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+h1 {
+    color: steelblue;
+    padding: 1.5rem;
+    border-bottom: 2px solid #333;
+}
+
 main{max-width: 840px;}
+
+main img {
+    width:150px;
+    height:auto;
+}
 
 aside{width: 20rem;
 margin: 1rem;
@@ -11,11 +45,6 @@ text-align: center;
 
 aside img {
     width:200px;
-    height:auto;
-}
-
-main img {
-    width:150px;
     height:auto;
 }
 
