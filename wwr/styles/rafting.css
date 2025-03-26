@@ -1,0 +1,139 @@
+
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+:root {
+    --Primary-color: #006994;
+    --Secondary-color: #4ea24e;
+    --Accent1-color: #696969;
+    --Accent2-color: #228B22;
+}
+.menuItems{
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+.menuItems ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menuItems ul li{
+    list-style: none;
+}
+.menuItems ul li a{
+    color: var(--Accent1-color);
+    text-decoration: none;
+}
+
+h1{
+    color: var(--primary-color);
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.here{
+    color: var(--primary-color);
+}
+
+h2 {
+    color: blueviolet; /* Set color for all h2 tags */
+}
+
+section h2{
+    padding: 1.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+p{
+    color: var(--accent1-color);
+    padding: 0;
+}
+
+body{
+    background-color: var(--accent1-color);
+    color: var(--accent2-color); 
+}
+
+.sociallinks{
+    text-decoration: none;
+}
+
+.hero{
+    position: relative;
+    background-image: url('../images/rj.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:80dvh;
+    width: 100%;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+        z-index: 1;
+    }
+}
+article{
+    width: 840px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 5px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    background-color: rgba(0, 105, 148, 0.7); /* Normal blue color with 70% opacity */
+    padding:1rem;
+}
+article img{
+    width: 250px;
+    height: 150px;
+}
+
+.hero h1{
+    position: absolute;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 2;
+    font-weight: 900;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+footer {
+
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+footer .sociallinks {
+    display: flex;
+    justify-content: center; /* Center align the social link images */
+    padding: 1rem;
+}
+
+footer .sociallinks a {
+    display: inline-block;
+    margin: 0 10px; /* Adjusted margin */
+    font-size: 0; /* Reset font size */
+}
+
+footer .sociallinks a img {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+}
