@@ -1,7 +1,7 @@
-
-header, .grid, footer{
-    max-width: 840px;
-    margin: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -10,19 +10,35 @@ header, .grid, footer{
     --Accent1-color: #696969;
     --Accent2-color: #228B22;
 }
-.menuItems{
-    display: grid;
-    grid-template-columns: 250px auto;
-}
-.menuItems ul{
+
+header {
+    background-color: #006994; 
+    width: 100%; 
+    padding: 20px 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 20px; 
 }
-.menuItems ul li{
+
+header img {
+    width: 70px;
+    height: auto;
+    object-fit: cover;
+}
+.menu-items ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     list-style: none;
 }
-.menuItems ul li a{
-    color: var(--Accent1-color);
+
+.menu-items ul li a {
+    color: white;
+    text-decoration: none;
+}
+.menu-items ul li a:hover {
+    color: burlywood;
     text-decoration: none;
 }
 
@@ -44,6 +60,36 @@ section h2{
     padding: 1.5rem;
     border-bottom: 2px solid var(--secondary-color);
 }
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers images */
+    gap: 10px; /* Adds spacing between images */
+    flex-wrap: wrap; /* Ensures images wrap on small screens */
+  }
+  
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 220px;
+  margin: auto;
+}
+
+figure img {
+  max-width: 220px;
+  max-height: 150px;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
 
 p{
     color: var(--accent1-color);
@@ -115,25 +161,43 @@ article img{
     box-sizing: border-box;
     text-align: center;
 }
-footer {
-
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+.history-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem;
 }
-footer .sociallinks {
+.history-container img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+footer {
+    margin-top: 15px;
+   padding: 20px;
+    background-color: #006994; /* Set the background color to blue */
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .social-links {
     display: flex;
     justify-content: center; /* Center align the social link images */
     padding: 1rem;
 }
 
-footer .sociallinks a {
+footer .social-links a {
     display: inline-block;
     margin: 0 10px; /* Adjusted margin */
     font-size: 0; /* Reset font size */
 }
 
-footer .sociallinks a img {
+footer .social-links a img {
     width: 20px; /* Adjust the size as needed */
     height: 20px; /* Adjust the size as needed */
 }
