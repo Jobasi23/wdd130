@@ -15,10 +15,9 @@ header {
     background-color: #006994; 
     width: 100%; 
     padding: 20px 60px;
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    gap: 20px; 
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 50px; 
 }
 
 header img {
@@ -27,14 +26,17 @@ header img {
     object-fit: cover;
 }
 .menu-items ul {
+
+    grid-column: 1/2;
     display: flex;
+    justify-content: space-around;
+
     align-items: center;
-    gap: 20px;
     list-style: none;
 }
 
 .menu-items ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .menu-items ul li a:hover {
@@ -176,28 +178,31 @@ article img{
 }
 footer {
     margin-top: 15px;
-   padding: 20px;
-    background-color: #006994; /* Set the background color to blue */
+    padding: 20px;
+    background-color: #006994; 
     width: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    color:white;
+
+
 }
 
 footer .social-links {
     display: flex;
-    justify-content: center; /* Center align the social link images */
+    justify-content: center; 
     padding: 1rem;
 }
 
 footer .social-links a {
     display: inline-block;
-    margin: 0 10px; /* Adjusted margin */
-    font-size: 0; /* Reset font size */
+    margin: 0 10px;
+    font-size: 0; 
 }
 
 footer .social-links a img {
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
+    width: 20px; 
+    height: 20px;
 }
