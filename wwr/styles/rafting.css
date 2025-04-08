@@ -50,9 +50,6 @@ h1{
     border-bottom: 2px solid var(--secondary-color);
 }
 
-.here{
-    color: var(--primary-color);
-}
 
 h2 {
     color: blueviolet; /* Set color for all h2 tags */
