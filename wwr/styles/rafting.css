@@ -36,7 +36,7 @@ header img {
 }
 
 .menu-items ul li a {
-    color: black;
+    color: #333333; /* Darker color for better contrast */
     text-decoration: none;
 }
 .menu-items ul li a:hover {
@@ -52,7 +52,7 @@ h1{
 
 
 h2 {
-    color: blueviolet; /* Set color for all h2 tags */
+    color: #5a2d82; /* Adjusted to a darker shade for better contrast */
 }
 
 section h2{
@@ -82,8 +82,8 @@ figure img {
 }
 
 figcaption {
-  background-color: #222;
-  color: #fff;
+  background-color: #333333; /* Slightly lighter for better readability */
+  color: #ffffff;
   font: italic smaller sans-serif;
   padding: 3px;
   text-align: center;
@@ -96,8 +96,8 @@ p{
 }
 
 body{
-    background-color: var(--accent1-color);
-    color: var(--accent2-color); 
+    background-color: #f0f0f0; /* Light background for better contrast */
+    color: #1a531b; /* Darker text color for readability */
 }
 
 .sociallinks{
@@ -194,8 +194,8 @@ iframe {
 
 .contact-form button {
     padding: 0.75rem;
-    background-color: #0077cc;
-    color: white;
+    background-color: #005fa3; /* Darker blue for better contrast */
+    color: #ffffff;
     font-weight: bold;
     border: none;
     cursor: pointer;

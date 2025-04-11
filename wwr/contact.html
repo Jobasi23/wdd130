@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Joshua Ifeanyichukwu Obasi">
     <meta name="description" content="Get in touch with Jayden and Dee Rafting for questions, bookings, and adventure planning. We're here to help you plan your next rafting experience.">
-    <title>contact us| Jayden and Dee rafting</title>
+    <title>Contact | Jayden and Dee Rafting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -64,7 +64,7 @@
 
         <section class="contact-form">
             <h2>Send Us a Message</h2>
-            <form action="#" method="post">
+            <form action="process_form.php" method="post">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -72,15 +72,21 @@
                 <input type="email" id="email" name="email" required>
 
                 <p><strong>Purpose of Message:</strong></p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                <label for="purpose-general">
+                    <input type="radio" id="purpose-general" name="purpose" value="general" required> General Inquiry
+                </label><br>
+                <label for="purpose-reservation">
+                    <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question
+                </label><br>
+                <label for="purpose-suggestion">
+                    <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion
+                </label>
 
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="newsletter">
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
                     Please subscribe me to the monthly newsletter
                 </label>
 
@@ -101,7 +107,7 @@
                <img src="images/instagram.png" alt="Instagram">
             </a>
         </nav>
-        <p><a href="https://www.figma.com/design/VX8Hqfq9NQLdT1aqvS8Tth/contact.html?node-id=0-1&m=dev&t=h9HyeBz1ZVT5R7Sr-1" target="_blank">View Contact Page Wireframe</a></p>
+        <p><a href="https://www.figma.com/design/VX8Hqfq9NQLdT1aqvS8Tth/contact.html?node-id=0-1&m=dev&t=h9HyeBz1ZVT5R7Sr-1" target="_blank" style="color: white;">View Contact Page Wireframe</a></p>
     </footer>
 </body>
 </html>
