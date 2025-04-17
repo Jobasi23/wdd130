@@ -6,9 +6,11 @@
 
 :root {
     --Primary-color: #006994;
-    --Secondary-color: #4ea24e;
+    --Secondary-color: blueviolet;
     --Accent1-color: #696969;
     --Accent2-color: #228B22;
+    --black-color: #000000;
+    --white-color: #ffffff;
 }
 
 header {
@@ -24,7 +26,9 @@ header img {
     width: 70px;
     height: auto;
     object-fit: cover;
+    border-radius: 60%;
 }
+
 .menu-items ul {
 
     grid-column: 1/2;
@@ -36,7 +40,7 @@ header img {
 }
 
 .menu-items ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .menu-items ul li a:hover {
@@ -112,16 +116,15 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-  
-  body.home .hero {
+.hero-home{
     background-image: url('../images/beez.jpeg');
 }
   
-  body.about .hero {
+.hero-about {
     background-image: url('../images/rj.jpg');
 }
   
-  body.trips .hero {
+.hero-trips {
     background-image: url('../images/main.jpeg');
 }
 
@@ -219,7 +222,7 @@ article img{
 }
 iframe {
     width: 100%;
-    height: 300px;
+    height: 500px;
     border: none; 
     display: block;
 }
@@ -273,6 +276,37 @@ iframe {
     padding: 20px;
   }
   
+  .purpose-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border: none;
+    padding: 10px 0;
+}
+
+.purpose-options label {
+    position: relative;
+    cursor: pointer;
+}
+
+.purpose-options input[type="checkbox"] {
+    display: none;
+}
+
+.button-like {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #0077cc;
+    color: white;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.purpose-options input[type="checkbox"]:checked + .button-like {
+    background-color: #005fa3;
+    box-shadow: 0 0 0 2px #003d66 inset;
+}
   .newsletter-form {
     background: #fff;
     padding: 2rem;
